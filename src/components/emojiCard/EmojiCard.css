@@ -1,0 +1,22 @@
+.EmojiCard {
+  display: flex;
+  justify-content: space-between;
+}
+
+.EmojiCard-ButtonContainer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+
+.pb1 {
+  margin-bottom: .75rem;
+}
+
+.mr1 {
+  margin-right: .5rem;
+}
+
+.ml1 {
+  margin-left: .5rem;
+}

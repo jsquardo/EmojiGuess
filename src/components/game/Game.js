@@ -5,12 +5,10 @@ import emojiItems from "../../Data/Data.js";
 function Game() {
 	const ranQuestionIndex = Math.floor(Math.random() * emojiItems.length);
 	const ranQuestion = emojiItems[ranQuestionIndex];
-
-	useEffect(() => {});
+	console.log(ranQuestion);
 
 	return (
 		<div>
-			<h1>Game</h1>
 			<EmojiCard ranQuestion={ranQuestion} />
 		</div>
 	);
