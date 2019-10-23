@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import "./EmojiCard.css";
 
 function EmojiCard({ ranQuestion }) {
+	const [toggle, setToggle] = useState(false);
+
+	const clueToggle = () => {
+		setToggle(!toggle);
+	};
+
 	return (
 		<div className='EmojiCard'>
 			<div className='container'>
@@ -15,9 +21,12 @@ function EmojiCard({ ranQuestion }) {
 								{ranQuestion.emojiImgs}
 							</div>
 							<div className='EmojiCard-ButtonContainer'>
-								<button className='button is-info mr1'>Clue?</button>
+								<button className='button is-info mr1' onClick={clueToggle}>
+									Clue?
+								</button>
 								<button className='button is-success ml1'>Answer</button>
 							</div>
+							<div className='clueBox' />
 						</div>
 					</div>
 				</div>

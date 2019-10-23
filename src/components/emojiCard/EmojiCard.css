@@ -20,3 +20,9 @@
 .ml1 {
   margin-left: .5rem;
 }
+
+.clueBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
